@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Text: Campo para entrada de texto simples.</h3>
+    <label for="nome">Nome:</label>
+    <input type="text"id="nome"name="nome">
+
+    <h3>Email: Campo especifico para enderecos de e-mail. O navegador valida automaticamente o formato do e-mail. </h3>
+    <label for="E-mail">E-mail:</label>
+    <input type="E-mail" id="E-mail" name="E-mail">
+
+    <h3>Password: Campo para senha. Os caracteres digitados são mascarados por asteriscos ou pontos.</h3>
+    <label for="senha">Senha</label>
+    <input type="password" id="senha" name="senha">
+
+    <h3>Number: Campo para entrada de numeros.</h3>
+    <label for="idade">Idade:</label>
+    <input type="number" id="idade" name="idade">
+
+    <h3>Date: Campo para seleção de datas.</h3>
+    <label for="nascimento">Data de Nascimento</label>
+    <input type="date" id="nascimento" name="nascimento">
+
+    <h3>Textarea: Area de texto para entrada de varias linhas.</h3>
+    <label for="mensagem">Mensagem</label>
+    <textarea id="mensagem" name="mensagem"></textarea>
+
+    <h3>Radio: Botões de opcão. Apenas um pode ser selecionado por vez.</h3>
+    <label>Sexo:</label><br>
+    <input type="radio" name="sexo" value="masculino">Masculino<br>
+    <input type="radio" name="sexo" value="feminino">Feminino
+
+    <h3>Select: Lista suspensa ou caixa de seleção.</h3>
+    <label for="pais">País:</label>
+    <select id="pais" name="pais">
+    <option value="br">Brasil</option>
+    <option value="us">Estado Unidos</option>
+    </select> 
+
+    <h3>Função: Envia os dados do formulario para o servidor, geralmente para processamento.</h3>
+    <button type="submit">Enviar</button>
+
+    <h3>Função: Limpa todos os campos do formulario, retornando-os ao seu estado inicial.</h3>
+    <button type="reset">Limpar</button>
+
+    <h3>Função: Cria um botão que pode executar qualquer ação personalizada, como chamar uma função Javascript.</h3>
+    <button type="button" onclick="mostrarModa1()">Mostrar Moda1</button>
+
+    <form>
+        <label for="nome">Nome:</label>
+        <input type="text" id="name" name="nome">
+
+        <label for="e-mail">E-mail:</label>
+        <input type="email" id="email" name="email">
+
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+    </form>
+
+     <form id="meuFormulario">
+        <label for="nome">Nome:</label>
+        <input type="text" id="name" name="nome">
+
+        <label for="e-mail">E-mail:</label>
+        <input type="email" id="email" name="email">
+
+        <label for="mensagem">Mensagem</label>
+        <textarea id="mensagem" name="mensagem"></textarea>
+        <br><br>
+
+        <button onclick="LimparMensagem()">Limpar Mensagem</button>
+        <button type="submit">Enviar</button>
+     </form>
+
+     <script>
+       function LimparMensagem() {
+        document.getElementById("mensagem").value = "";
+       }
+     </script>
+     
+
+
+
+
+    
+</body>
+</html>
