@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p><b>Texto em negrito</b><br></p>
+
+    <p>A <strong>borracha</strong> é nosaa.<strong></strong><br></p>
+
+    <p><i>Texto meio deitado.</i><br></p>
+
+    <p></p>Este <u>texto está sublinhado.</u><br></p>
+
+    <p></p>Esta <u>palavra está sublinhada.</u><br></p>
+
+    <p></p>N<sup>2</sup><br></p>
+
+   <p>Meu peso é 90 <sub>kg</sub><br></p>
+
+   <p>Meu <ins>gato</ins> é <ins>branco</ins></p>
+
+   <del>Este texto será removido.</del><br>
+
+   <small>Este texto é menor.</small><br>
+
+   Procure a palavra <mark>chave</mark> neste texto.
+
+   <pre>
+    function hello() {
+    console.log("Hello,word");    
+    }
+   </pre>
+
+   <blockquote>
+    "A única coisa que nunca falha é a mudança. " - Heráclito
+   </blockquote><br>
+
+   Ele disse<q>Vou pensar sobre isso.</q><br>
+
+   <audio controls>
+    <source src="audio/motivational-rock-music-you-canx27t-give-up-120949.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+   </audio>
+
+   <audio id="meuAudio" src="" controls></audio>
+   <br><br>
+   <button onclick="playAudio()">play</button>
+   <button onclick="stopAudio()">Stop</button>
+   <button onclick="loopAudio()">Loop</button>
+
+   <script>
+    function playAudio() {
+        var audio = document.getElementById("meuAudio");
+        audio.play();
+    }
+    function stopAudio() {
+        var audio = document.getElementById("meuAudio");
+        audio.pause();
+        
+    }
+    function loopAudio() {
+        var audio = document.getElementById("meuAudio");
+        audio.loop = true;
+        audio.play();
+        
+    }
+
+
+   </script>
+
+
+
+
+
+    
+
+
+
+
+
+    
+
+   
+</body>
+</html>
