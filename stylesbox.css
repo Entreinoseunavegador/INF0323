@@ -1,0 +1,17 @@
+body {
+    display: flex;
+    flex-direction: row;
+}
+.left {
+    flex: 1;
+    background-color: lightgreen;
+    padding: 20px;
+}
+    
+        .right{
+            flex: 2;
+            background-color: lightgreen;
+            padding: 20px;
+        }
+
+    
